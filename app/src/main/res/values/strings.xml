@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Jobsheet1_Praktikum Views &amp; ViewGroupsAssignment</string>
+
+    <string-array name="nama_pesanan">
+        <item>Pilih Pesanan</item>
+        <item>Kopi Hitam</item>
+        <item>Kopi Gula Aren</item>
+        <item>Americano on top</item>
+        <item>Matcha Latte</item>
+    </string-array>
+</resources>

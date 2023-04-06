@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mico | Coofed shop"
+        android:background="#A26105"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:padding="20dp"/>
+
+        <EditText
+            android:id="@+id/namaPemesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topbar"
+            android:background="@drawable/input_shape"
+            android:hint="Nama pemesan"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:id="@+id/emailPemesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/namaPemesan"
+            android:background="@drawable/input_shape"
+            android:padding="10dp"
+            android:hint="Email pemesan"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:inputType="number"
+            android:id="@+id/noPemesan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_shape"
+            android:padding="10dp"
+            android:layout_below="@+id/emailPemesan"
+            android:hint="No Handphone pemesan"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <EditText
+            android:inputType="date"
+            android:id="@+id/tglPesanan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/input_shape"
+            android:padding="10dp"
+            android:layout_below="@+id/noPemesan"
+            android:hint="Tanggal Pesanan"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/daftar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Minuman"
+            android:layout_below="@+id/tglPesanan"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20dp"/>
+
+        <Spinner
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_below="@id/daftar"
+            android:entries="@array/nama_pesanan"/>
+
+        <TextView
+            android:id="@+id/daftarEmam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Makanan"
+            android:layout_below="@+id/menu"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20dp"/>
+
+        <CheckBox
+            android:id="@+id/sandwich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sandwich"
+            android:onClick="pilihMakan"
+            android:layout_below="@+id/daftarEmam"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/cheese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cheese Cake"
+            android:onClick="pilihMakan"
+            android:layout_toRightOf="@+id/sandwich"
+            android:layout_below="@+id/daftarEmam"
+            android:layout_marginLeft="20dp"/>
+
+        <CheckBox
+            android:id="@+id/gehu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tauge on tofu"
+            android:onClick="pilihMakan"
+            android:layout_toRightOf="@+id/cheese"
+            android:layout_below="@+id/daftarEmam"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:layout_below="@+id/gehu"
+            android:paddingTop="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:textSize="20dp"/>
+
+        <RadioGroup
+            android:id="@+id/pembayaran"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bayar"
+            >
+            <RadioButton
+                android:id="@+id/debit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Debit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <RadioButton
+                android:id="@+id/cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cash"
+                android:layout_below="@+id/debit"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+
+            <RadioButton
+                android:id="@+id/gopay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gopay"
+                android:layout_below="@+id/cash"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"/>
+        </RadioGroup>
+
+
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pembayaran"
+            android:layout_margin="20dp"
+            android:backgroundTint="#A26105"
+            android:text="Pesan" />
+
+    </RelativeLayout>
+
+</ScrollView>

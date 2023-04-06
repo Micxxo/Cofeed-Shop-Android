@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Hasil">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/kopi"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Coofed Shop"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:textSize="32dp"
+                android:padding="20dp"/>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama Pemesan"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/top"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/namaPemesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mico"
+            android:layout_below="@+id/nama"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email Pemesan"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/namaPemesan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/emailPemesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mico@gmail.com"
+            android:layout_below="@+id/email"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/telp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Hp Pemesan"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/emailPemesan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/noPemesan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="098978i8767"
+            android:layout_below="@+id/telp"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tanggal Pesanan"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/noPemesan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/tglPesanan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="09/02/2023"
+            android:layout_below="@+id/tgl"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/kopiJdl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pesanan Kopi"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/tglPesanan"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/kopi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matcha Latte"
+            android:layout_below="@+id/kopiJdl"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/snackJdl"
+            android:layout_width="398dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/kopi"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Pesanan Makanan"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/snack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ambasing"
+            android:layout_below="@+id/snackJdl"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/bayar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pembayaran"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_below="@+id/snack"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/pembayaran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cash"
+            android:layout_below="@+id/bayar"
+            android:layout_marginLeft="20dp"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="20dp"/>
+
+
+    </RelativeLayout>
+
+</ScrollView>
